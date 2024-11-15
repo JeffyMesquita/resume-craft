@@ -1,4 +1,5 @@
 import Logo from "@/assets/logo.svg";
+import { NavItems } from "@/components";
 
 type DashboardLayoutProps = {
   children: React.ReactNode;
@@ -11,7 +12,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <section className="w-full border-b border-muted p-6">
           <Logo className="max-[6.25rem] mx-auto" />
         </section>
-        sidebar
+        <NavItems />
       </aside>
 
       <main>{children}</main>
