@@ -1,5 +1,5 @@
 import Logo from "@/assets/logo.svg";
-import { NavItems } from "@/components";
+import { NavItems, ThemeToggle, UserDropdown } from "@/components";
 
 type DashboardLayoutProps = {
   children: React.ReactNode;
@@ -10,12 +10,19 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     <div className="grid h-screen w-full grid-cols-[18.75rem,1fr] overflow-hidden">
       <aside className="flex h-full w-full flex-col items-center border-r border-muted">
         <section className="w-full border-b border-muted p-6">
-          <Logo className="max-[6.25rem] mx-auto" />
+          <Logo className="mx-auto max-w-[6.25rem]" />
         </section>
         <NavItems />
+
+        <footer className="mt-auto flex w-full items-center justify-between border-t border-muted px-3 py-4">
+          <UserDropdown />
+          <ThemeToggle />
+        </footer>
       </aside>
 
-      <main>{children}</main>
+      <main className="flex h-full w-full flex-col overflow-auto p-6">
+        {children}
+      </main>
     </div>
   );
 }
