@@ -17,3 +17,16 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup,
 } from "./DropdownMenu";
+
+export {
+  Dialog,
+  DialogPortal,
+  DialogOverlay,
+  DialogClose,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription,
+} from "./Dialog";

@@ -1,5 +1,6 @@
 // Pages
 export { NavItems, UserDropdown } from "./pages";
+export { ResumeList } from "./pages";
 
 // UI
 export { Avatar, AvatarImage, AvatarFallback } from "./ui";
@@ -22,6 +23,20 @@ export {
   DropdownMenuRadioGroup,
 } from "./ui";
 
+export {
+  Dialog,
+  DialogPortal,
+  DialogOverlay,
+  DialogClose,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription,
+} from "./ui";
+
 // Shared
 export { ThemeProvider } from "./shared";
 export { ThemeToggle } from "./shared";
+export { CustomDialog } from "./shared";

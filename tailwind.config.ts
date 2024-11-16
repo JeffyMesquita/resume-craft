@@ -11,6 +11,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        // this is a size screen for middle devices,
+        // need to be greater than 768px and less than 1024px
+        "mid-lg": "896px",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         title: ["var(--font-title)", ...fontFamily.sans],
